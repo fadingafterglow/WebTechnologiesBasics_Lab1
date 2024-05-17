@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Professor registration</title>
+    </head>
+    <body>
+        <article>
+            <form>
+                <fieldset>
+                    <legend>Professor registration</legend>
+                    <section>
+                        <label for="full_name">Full name</label>
+                        <input type="text" id="full_name" name="full_name" />
+                    </section>
+                    <section>
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </section>
+                    <section>
+                        <label for="birth_date">Date of birth</label>
+                        <input type="date" id="birth_date" name="birth_date" />
+                    </section>
+                    <section>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" />
+                    </section>
+                    <section>
+                        <label for="phone_number">Phone number</label>
+                        <input type="tel" id="phone_number" name="phone_number" />
+                    </section>
+                    <section>
+                        <label for="bg_color">Background color</label>
+                        <input type="color" id="bg_color" name="bg_color"/>
+                    </section>
+                    <section>
+                        <label for="country">Country</label>
+                        <input type="text" list="countries" id="country" name="country"/>
+                        <datalist id="countries">
+                            <option>Ukraine</option>
+                            <option>England</option>
+                            <option>Usa</option>
+                        </datalist>
+                    </section>
+                    <section>
+                        <label for="city">City</label>
+                        <input type="text" list="cities" id="city" name="city" />
+                        <datalist id="cities">
+                            <option>Kyiv</option>
+                            <option>Kharkiv</option>
+                            <option>Poltava</option>
+                            <option>Lviv</option>
+                            <option>London</option>
+                            <option>Birmingham</option>
+                            <option>Washington</option>
+                            <option>New York</option>
+                        </datalist>
+                    </section>
+                    <section>
+                        <label for="comment">Comment</label>
+                        <textarea id="comment" name="comment"></textarea>
+                    </section>
+                    <section>
+                        <button type="submit">Submit</button>
+                    </section>
+                </fieldset>
+            </form>
+        </article>
+    </body>
+</html>
